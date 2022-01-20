@@ -1,6 +1,6 @@
 # タイトル
 【ERROR】 Following services are not running: web. elastic beanstalkでこのエラーが出て困った
-
+![dd](2022-01-18-08-40-53.png)
 # 経緯
 elastic beanstalkを利用して、[公式チュートリアル](https://docs.aws.amazon.com/ja_jp/elasticbeanstalk/latest/dg/create-deploy-python-django.html#python-django-configure-for-eb)を参考に、Djangoアプリのデプロイが完了したかと思いきや、重大なエラーが発生していた。
 ![スクリーンショット 2022-01-12 午後4.37.09.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/487834/fea1e157-9016-7848-9ecc-460fba52a934.png)
