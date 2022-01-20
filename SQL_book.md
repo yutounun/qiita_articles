@@ -1,8 +1,5 @@
 - [SQL ゼロから始めるデータベース操作](#sql-ゼロから始めるデータベース操作)
-<<<<<<< HEAD
 - [接続](#接続)
-=======
->>>>>>> 382b6ee04aca07b3a45236b2afb524f15f856e7d
 - [データベースとSQL](#データベースとsql)
   - [テーブルの変更](#テーブルの変更)
     - [テーブルにカラムを追加する](#テーブルにカラムを追加する)
@@ -35,7 +32,6 @@
     - [条件指定](#条件指定)
   - [データの更新](#データの更新)
   - [複数列の更新](#複数列の更新)
-<<<<<<< HEAD
 - [TRANSACTION](#transaction)
   - [COMMIT](#commit)
   - [ROLLBACK](#rollback)
@@ -96,14 +92,6 @@ $ psql
 $ \c <detabase_name> 
 ```
 
-=======
-- [質問](#質問)
-  - [ソートキー](#ソートキー)
-  - [TRUNCATEは使う？](#truncateは使う)
-# SQL ゼロから始めるデータベース操作
-これまでに知らなかった知識をメモしていく
-
->>>>>>> 382b6ee04aca07b3a45236b2afb524f15f856e7d
 # データベースとSQL
 ## テーブルの変更
 すでにテーブルを作成した後にカラムを削除・追加したいなど思ったら、再作成する必要はない
@@ -486,17 +474,11 @@ WHERE price >= 1000;
 このように削除もレコードを制限できる
 
 ## データの更新
-<<<<<<< HEAD
 ```bash
 UPDATE <table_name>
 # set values
 SET <column_name> = <式>
 # select record
-=======
-```
-UPDATE <table_name>
-SET <column_name> = <式>
->>>>>>> 382b6ee04aca07b3a45236b2afb524f15f856e7d
 WHERE ~~
 ```
 
@@ -533,7 +515,6 @@ set shohin_mei = '靴下',
 where shohin_mei = 'パンツ';
 ```
 
-<<<<<<< HEAD
 # TRANSACTION
 beginとcommitで囲むことでトランザクションを作ることができる。
 ## COMMIT
@@ -1018,8 +999,6 @@ GROUP BY ROLLUP(shohin_mei);
 
 
 
-=======
->>>>>>> 382b6ee04aca07b3a45236b2afb524f15f856e7d
 # 質問
 ## ソートキー
 dynamoDBでソートキーをGUIで設定した気がするが、それは何か。
@@ -1029,7 +1008,6 @@ dynamoDBでソートキーをGUIで設定した気がするが、それは何か
 →いやこれは違う。それなら順番入れ替わったり追加されるたびにかなり負荷かかることになる。
 
 ## TRUNCATEは使う？
-<<<<<<< HEAD
 レコードを全件削除にはこれも使えて、DELETEより高速な処理で時間を短縮できるらしいが、使うことはあるのか？
 
 ## なぜトランザクション途中でも更新してしまう？
@@ -1048,6 +1026,3 @@ dynamoDBでソートキーをGUIで設定した気がするが、それは何か
 [チューニングなどの事例](https://oreno-it.info/archives/category/oracle/oracle-sql)
 [SQLを高速化するコツ・テクニック](https://style.potepan.com/articles/26070.html)
 [SQL CASE](https://www.w3schools.com/sql/sql_case.asp)
-=======
-レコードを全件削除にはこれも使えて、DELETEより高速な処理で時間を短縮できるらしいが、使うことはあるのか？
->>>>>>> 382b6ee04aca07b3a45236b2afb524f15f856e7d
